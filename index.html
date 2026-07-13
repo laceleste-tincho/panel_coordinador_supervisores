@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel Coordinadora de Supervisores · La Celeste</title>
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,45 +26,45 @@
       <span id="nota-produccion">Plan de Producción actualiza los viernes</span>
     </div>
 
-    <main class="list">
-      <a class="row" href="https://docs.google.com/spreadsheets/d/13XcyZdw4zyb3Iq-bfIJouKX5wzQTtxUHQ_8MYbw6WFM/edit?gid=1344726606#gid=1344726606" target="_blank" rel="noopener">
-        <span class="row-index">01</span>
-        <span class="row-body">
-          <span class="row-title">Plan de Producción</span>
-          <span class="row-meta">Producción 001 — pestaña "Tabla de proyecciones"</span>
-          <span class="row-desc">Rango a revisar: columnas G a X, filas 844 a 896.</span>
+    <main class="grid">
+      <a class="card" href="https://docs.google.com/spreadsheets/d/13XcyZdw4zyb3Iq-bfIJouKX5wzQTtxUHQ_8MYbw6WFM/edit#gid=1344726606&range=G844:X896" target="_blank" rel="noopener">
+        <span class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1.5"/><path d="M9 3v2h6V3"/><path d="M9 9h6M9 12.5h6M9 16h4"/></svg>
         </span>
-        <span class="row-tag" id="tag-produccion">Semanal · viernes</span>
+        <span class="card-title">Plan de Producción</span>
+        <span class="card-meta">Producción 001 — "Tabla de proyecciones"</span>
+        <span class="card-desc">Columnas G a X, filas 844 a 896.</span>
+        <span class="card-tag" id="tag-produccion">Semanal · viernes</span>
       </a>
 
-      <a class="row" href="https://drive.google.com/drive/u/0/folders/1fKcIM8xJ_ISmRwvduiVe2VTGOwGTWorl" target="_blank" rel="noopener">
-        <span class="row-index">02</span>
-        <span class="row-body">
-          <span class="row-title">Seguimiento de Stock</span>
-          <span class="row-meta">Carpeta "Contador de stock" — original y copia diaria</span>
-          <span class="row-desc">Controlar contra el cierre de turno del día anterior y comparar con la copia del día. Prestar atención a las fechas de la mercadería.</span>
+      <a class="card" href="https://drive.google.com/drive/u/0/folders/1fKcIM8xJ_ISmRwvduiVe2VTGOwGTWorl" target="_blank" rel="noopener">
+        <span class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5 12 4l9 4.5-9 4.5-9-4.5Z"/><path d="M3 8.5V16l9 4.5 9-4.5V8.5"/><path d="M12 13v7.5"/></svg>
         </span>
-        <span class="row-tag">Diario</span>
+        <span class="card-title">Seguimiento de Stock</span>
+        <span class="card-meta">Carpeta "Contador de stock" — original y copia diaria</span>
+        <span class="card-desc">Controlar contra el cierre del día anterior y comparar con la copia del día. Atención a las fechas de la mercadería.</span>
+        <span class="card-tag">Diario</span>
       </a>
 
-      <a class="row" href="https://drive.google.com/drive/folders/1XZ4aWjqZ7eqjoj-GlvR7HpH7QeBhy-Ju" target="_blank" rel="noopener">
-        <span class="row-index">03</span>
-        <span class="row-body">
-          <span class="row-title">Envíos / Salidas de Productos</span>
-          <span class="row-meta">Carpeta con copias diarias</span>
-          <span class="row-desc">Control de salida de mercadería. Se tiene en cuenta, pero no es de uso frecuente.</span>
+      <a class="card" href="https://drive.google.com/drive/folders/1XZ4aWjqZ7eqjoj-GlvR7HpH7QeBhy-Ju" target="_blank" rel="noopener">
+        <span class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="9.5" width="14" height="8" rx="1"/><path d="M16.5 12h3.2l2.3 2.6v3.4a1 1 0 0 1-1 1H16.5"/><circle cx="6.5" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>
         </span>
-        <span class="row-tag muted">Ocasional</span>
+        <span class="card-title">Envíos / Salidas</span>
+        <span class="card-meta">Carpeta con copias diarias</span>
+        <span class="card-desc">Control de salida de mercadería. Se tiene en cuenta, pero no es de uso frecuente.</span>
+        <span class="card-tag muted">Ocasional</span>
       </a>
 
-      <div class="row is-disabled">
-        <span class="row-index">04</span>
-        <span class="row-body">
-          <span class="row-title">Plan Control</span>
-          <span class="row-meta">Plan de Producción vs. control diario de supervisores</span>
-          <span class="row-desc">Cruce entre lo pedido en el plan y lo realizado según la app del orden y el pedido (ej.: bolsas de criollo pedidas vs. hechas). Todavía sin link directo.</span>
+      <div class="card is-disabled">
+        <span class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
         </span>
-        <span class="row-tag muted">Sin link aún</span>
+        <span class="card-title">Plan Control</span>
+        <span class="card-meta">Plan de Producción vs. control diario</span>
+        <span class="card-desc">Cruce entre lo pedido en el plan y lo realizado según la app del orden y el pedido (ej.: bolsas de criollo pedidas vs. hechas).</span>
+        <span class="card-tag muted">Sin link aún</span>
       </div>
     </main>
 
