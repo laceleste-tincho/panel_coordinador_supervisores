@@ -13,15 +13,9 @@ function init() {
   document.getElementById("fecha-hoy").textContent = formatearFecha(hoy);
   document.getElementById("fecha-stock").textContent = formatearFecha(ayer);
 
-  const esViernes = hoy.getDay() === 5;
-  const pillProduccion = document.getElementById("pill-produccion");
-  const badgeProduccion = document.getElementById("badge-produccion");
-
-  if (esViernes) {
-    pillProduccion.classList.add("alert");
-    pillProduccion.querySelector("strong").textContent = "Hoy toca actualizar";
-    badgeProduccion.textContent = "Actualiza hoy";
-    badgeProduccion.classList.add("soon");
+  if (hoy.getDay() === 5) {
+    document.getElementById("nota-produccion").textContent = "Hoy toca actualizar el Plan de Producción";
+    document.getElementById("tag-produccion").textContent = "Actualiza hoy";
   }
 }
 
