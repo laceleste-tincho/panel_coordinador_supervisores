@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Coordinadora de Supervisores · La Celeste</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="logo-frame"><img class="logo" src="assets/logo.png" alt="Panadería La Celeste - Desde 1952"></span>
+      <div class="hero-text">
+        <h1>Panel Coordinadora de Supervisores</h1>
+        <p>Accesos directos a las herramientas de trabajo diario · Panadería La Celeste</p>
+      </div>
+    </header>
+
+    <div class="today-bar">
+      <span class="pill">📅 Hoy: <strong id="fecha-hoy">—</strong></span>
+      <span class="pill">📦 Stock a controlar (cierre 22:00 hs): <strong id="fecha-stock">—</strong></span>
+      <span class="pill" id="pill-produccion">🗓️ Plan de Producción: <strong>se actualiza los viernes</strong></span>
+    </div>
+
+    <main class="grid">
+      <a class="card" href="https://docs.google.com/spreadsheets/d/13XcyZdw4zyb3Iq-bfIJouKX5wzQTtxUHQ_8MYbw6WFM/edit?gid=1344726606#gid=1344726606" target="_blank" rel="noopener">
+        <span class="badge" id="badge-produccion">Semanal</span>
+        <div class="card-icon">📋</div>
+        <h2>Plan de Producción</h2>
+        <p class="sub">Producción 001 · Pestaña "TABLA DE PROYECCIONES"</p>
+        <p>Se pasa una vez por semana, los viernes. Rango a revisar: columnas G a X, filas 844 a 896.</p>
+        <span class="link-hint">Abrir planilla →</span>
+      </a>
+
+      <a class="card" href="https://drive.google.com/drive/u/0/folders/1fKcIM8xJ_ISmRwvduiVe2VTGOwGTWorl" target="_blank" rel="noopener">
+        <span class="badge">Diario</span>
+        <div class="card-icon">📊</div>
+        <h2>Seguimiento de Stock</h2>
+        <p class="sub">Carpeta "Contador de stock" (original + copia diaria)</p>
+        <p>Controlar con el cierre de turno (22:00 hs) del día anterior, y comparar contra la copia del día para ver cómo va. Prestar atención a las fechas de la mercadería.</p>
+        <span class="link-hint">Abrir carpeta →</span>
+      </a>
+
+      <a class="card" href="https://drive.google.com/drive/folders/1XZ4aWjqZ7eqjoj-GlvR7HpH7QeBhy-Ju" target="_blank" rel="noopener">
+        <span class="badge">Uso ocasional</span>
+        <div class="card-icon">🚚</div>
+        <h2>Envíos / Salidas de Productos</h2>
+        <p class="sub">Carpeta con copias diarias</p>
+        <p>Control de salida de mercadería. Se tiene en cuenta pero no es de uso frecuente.</p>
+        <span class="link-hint">Abrir carpeta →</span>
+      </a>
+
+      <div class="card disabled">
+        <span class="badge soon">Próximamente</span>
+        <div class="card-icon">✅</div>
+        <h2>Plan Control</h2>
+        <p class="sub">Plan de Producción vs. control diario de supervisores</p>
+        <p>Cruce entre lo pedido en el plan y lo realizado según la app del orden y el pedido (ej: bolsas de criollo pedidas vs. hechas). Todavía sin link directo.</p>
+      </div>
+    </main>
+
+    <footer>
+      Panel interno · Coordinadora de Supervisores · La Celeste
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
